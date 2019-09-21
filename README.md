@@ -1,6 +1,6 @@
 # worteks/humhub-auth-oidc
 
-This extension adds OIDC authentication support for [HumHub](https://github.com/humhub/humhub).
+This extension adds [OIDC](https://openid.net/specs/openid-connect-core-1_0.html) authentication support for [HumHub](https://github.com/humhub/humhub).
 
 Based on [yii2auth-oidc](http://github.com/Worteks/yii2auth-oidc)
 
