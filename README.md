@@ -35,20 +35,18 @@ Example application configuration:
 
 ```php
 'components' => [
-   'authClientCollection' => [
-     'authClientCollection' => [
-       'clients' => [
-          // ...
-          'oidc' => [
-            'class' => 'worteks\humhub\authclient\OIDC',
-            'domain' => 'https://auth.example.com',
-            'clientId' => 'myClientId',
-            'clientSecret' => 'myClientSecret',
-            'defaultTitle' => 'auth.example.com',
-            'cssIcon' => 'fa fa-sign-in',
-          ],
-       ],
-     ],
+  'authClientCollection' => [
+    'clients' => [
+      // ...
+      'oidc' => [
+        'class' => 'worteks\humhub\authclient\OIDC',
+        'domain' => 'https://auth.example.com',
+        'clientId' => 'myClientId',
+        'clientSecret' => 'myClientSecret',
+        'defaultTitle' => 'auth.example.com',
+        'cssIcon' => 'fa fa-sign-in',
+      ],
+    ],
     // ...
 ]
 ```
