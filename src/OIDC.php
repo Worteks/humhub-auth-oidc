@@ -8,13 +8,14 @@
 namespace worteks\humhub\authclient;
 
 use humhub\modules\user\authclient\interfaces\ApprovalBypass;
+use humhub\modules\user\authclient\interfaces\SyncAttributes;
 
 /**
  * OIDC authentication client
  *
  * @since 0.1
  */
-class OIDC extends \worteks\yii\authclient\OIDC implements ApprovalBypass
+class OIDC extends \worteks\yii\authclient\OIDC implements ApprovalBypass, SyncAttributes
 {
     public $cssIcon = 'fa fa-sign-in';
 
@@ -40,5 +41,13 @@ class OIDC extends \worteks\yii\authclient\OIDC implements ApprovalBypass
         'firstname' => 'given_name',
         'lastname' => 'family_name'
       ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getSyncAttributes()
+    {
+        return ["firstname","lastname"];
     }
 }
