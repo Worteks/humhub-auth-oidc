@@ -22,7 +22,7 @@ php composer.phar require worteks/humhub-auth-oidc
 or add
 
 ```json
-"worteks/humhub-auth-oidc": "~0.2"
+"worteks/humhub-auth-oidc": "~0.3"
 ```
 
 to the `require` section of your composer.json.
