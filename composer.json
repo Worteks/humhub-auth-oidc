@@ -4,7 +4,7 @@
   "keywords": ["humhub", "authclient", "oauth2", "openid-connect", "openidconnect"],
   "homepage": "http://github.com/worteks/humhub-auth-oidc",
   "require": {
-    "worteks/yii2auth-oidc": "~0.1"
+    "worteks/yii2auth-oidc": "~0.2"
   },
   "license": "MIT",
   "authors": [
